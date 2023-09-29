@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.nav.css">
+    <title>Document</title>
+    <style>
+    	:root{
+    	--heigth:100 svh;
+    --width:100 svw;
+    --bg:hsl(200 50% 5%);
+    --fg:hsl(200 10% 98%);
+    }
+    
+    
+    html{
+    	background: var(--bg);
+    scroll-behavior:smooth;
+    }
+    
+    
+    body{
+    	font-family:Arial;
+    font-size:2.25 rem;
+    height:var(--heigth);
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    
+    nav{
+    	height: calc(1/3*100%);
+    box-sizing:border-box;
+    display:flex;
+    gap:5 rem;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    
+    
+    }
+    
+    nav> div{
+    	border-left:2px solid var(--fg);
+
+    border-bottom-left-radius:  2em;
+    height:5em;
+    aspect-ratio: 16/9;
+    max-width: calc(1/8*100%);
+    
+
+    transition: all 1s ease-in-out;
+    }
+    
+    nav>div:nth-chd(2){
+    	flex-grow:2;
+    }
+    
+     a{
+        text-decoration: none;
+        color:var(--fg);
+    }
+
+    nav>div>h1{
+    	color:var(--bg);
+        text-align: center;
+    }
+    
+    nav>div:not(:hover)>h1{
+    	color:var(--fg);
+    }
+    
+    nav>div:hover{
+    	border-radius:2em;
+    	flex-grow:4;
+    background-color:var(--fg);
+    
+    }
+    nav>div:hover>h1>a{
+     color:var(--bg);
+    
+    }
+
+    p{
+        color: var(--fg);
+        font-size: 2em;
+    }
+
+
+    
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>este es el header</p>
+        <h1 style="color:blanchedalmond;">estoy en faq</h1>
+    </header>
+    <nav>
+        <div> <h1> <a href="./index.clase8.html"> Home</a></h1></div>
+        <div> <h1> <a href="./Catalogo.html">Catálogo </a></h1></div>
+        <div> <h1> <a href="./acercade.html"> Acerca de</a></h1></div>
+        <div> <h1> <a href="./contacto.html">Contacto</a></h1></div>
+        <div> <h1> <a href="./faq.html">Preguntas frecuentes</a></h1></div>
+            
+    </nav>
+    <section><p>soy una sectiion</p></section>
+    <main> <p>soy un main</p></main>
+    <footer><p>soy el footer</p></footer>
+</body>
+
+</html>
