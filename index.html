@@ -4,27 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./asset/style.css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+    <title>BEER PUB</title>
 
 </head>
 
 <body>
-    <header>
-        <p>este es el header</p>
-        <h1 style="color:blanchedalmond;">esto en el home</h1>
-    </header>
-    <nav>
-        <div> <h1> <a href="./index.clase8.html"> Home</a></h1></div>
-        <div> <h1> <a href="./Catalogo.html">Catálogo </a></h1></div>
-        <div> <h1> <a href="./acercade.html"> Acerca de</a></h1></div>
-        <div> <h1> <a href="./contacto.html">Contacto</a></h1></div>
-        <div> <h1> <a href="./faq.html">Preguntas frecuentes</a></h1></div>
-            
+    <div class="menu-btn">
+
+        <i class="iconoBoton"><img src="./assets/media/img/btn-amburg.png" alt="" width="55em" height="55em"></i>
+    </div>
+    <div class="contenedor">
+
+        <header>
+            <div class="logo">
+                
+            </div>
+            <!-- <div>
+                
+                <h2 class="cabecera">
+                    Pub -  Cerveceria
+                </h2>
+            </div> -->
+        </header>
+
+        <!-- aca va el show para que aparezca con js el menu -->
+        <nav>
+        <div> <h1> <a href="./index.html"> Home</a></h1></div>
+        <div> <h1> <a href="./assets/acercade.html">Acerca de </a></h1></div>
+        <div> <h1> <a href="./assets/localizacion.html"> Localizacion</a></h1></div>
+        <div> <h1> <a href="./assets/contacto.html">Contacto</a></h1></div>
+        <div> <h1> <a href="./assets/faq.html">Faq</a></h1></div>
+        
     </nav>
-    <section><p>soy una sectiion</p></section>
-    <main> <p>soy un main</p></main>
-    <footer><p>soy el footer</p></footer>
+</div>
+    <hr>
+    <main class="sliderII">
+        <section class="section-index">
+
+            <div class="slider">
+                <ul>
+
+
+                    <li> <img src="./assets/media/img/florencia-viadana-mI61X5I-jKQ-unsplash.jpg" alt="" class="tamaño"></li>
+                    <li> <img src="./assets/media/img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg" alt="" class="tamaño"></li>
+                    <li> <img src="./assets/media/img/jon-parry-C8eSYwQkwHw-unsplash.jpg" alt="" class="tamaño"></li>
+                    <li> <img src="./assets/media/img/fondodos.jpg" alt="" class="tamaño" ></li>
+
+                
+                
+                </ul>
+
+            </div>
+
+
+
+
+        </section>
+        <aside>
+            <div class="slider">
+                <div class="formulario">
+                    <form name="formulario"
+                    action="https://formspree.io/f/xvojadgo"
+                    method="POST">
+                    
+                        <h2 class="titulo margen">
+                            ¡Contáctanos!
+                        </h2>
+                        <p class="tituloP margen2">
+                            Déjanos tu consulta y te responderemos cuanto antes.
+                        </p>
+            <div class="mensaje" >
+
+                
+                <fieldset>
+                    <legend class="titulo">Datos Personales</legend>
+                    <div>
+                        
+                        <input type="text" id="nombre" name="nombre"  placeholder="Nombre" class="input" required >
+                    </div> 
+                   <div class="br"></div>
+                   
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Email" class="input" required>
+                    </div>
+                </fieldset>
+                <div class="br"></div>
+                <textarea name="mensaje" id="mensaje" cols="36" rows="10" placeholder="Mensaje"></textarea>
+                
+                <div class="br"></div>
+                <div class="contengo_check">
+                    
+                    <input  type="checkbox" name="check" id="check"><span class="acepto">Acepto que mis datos serán utilizados con el objeto de brindarme servicios, productos y asistencia, conformes a la política de privacidad. <span><a class="standard" href="#"><b>Política de privacidad</b></a></span></span>
+                    
+                </div>
+                <p>
+                    <input class="rojo" type="submit" value="Enviar Consulta">
+                </p>
+            </div>
+            </form>
+        </div>
+
+            </div>
+        </aside>
+
+
+
+
+    </main>
+    <footer class="center">
+
+        <p>Síguenos en nuestras redes. </p>
+        <a class="redsoc"  href="https://www.twitter.com" target="_blank">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a class="redsoc" href="https://www.facebook.com" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a class="redsoc" href="https://www.pinterest" target="_blank">
+            <i class="fa fa-pinterest" aria-hidden="true"></i>
+        </a>
+        <a class="redsoc" href="https://www.instagram.com" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a class="redsoc" href="https://www.linkedin.com" target="_blank">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+    
+    <p>Derechos reservados @2023</p>
+    
+
+    </footer>
+    <script src="./assets/js/menu.js"></script>
 </body>
 
 </html>
