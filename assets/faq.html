@@ -9,92 +9,106 @@
     <title>BEER PUB</title>
 
 </head>
-
-<body>
+  <body>
     <div class="menu-btn">
 
-        <i class="iconoBoton"><img src="./media/img/btn-amburg.png" alt="" width="55em" height="55em"></i>
-    </div>
-    <div class="contenedor">
-
-        <header>
-            <div class="logo">
-                
-            </div>
-            <!-- <div>
-                
-                <h2 class="cabecera">
-                    Pub -  Cerveceria
-                </h2>
-            </div> -->
-        </header>
-
-        <!-- aca va el show para que aparezca con js el menu -->
-        <nav>
-            <div> <h1> <a href="../index.html"> Home</a></h1></div>
-            <div> <h1> <a href="./acercade.html">Acerca de </a></h1></div>
-            <div> <h1> <a href="./localizacion.html"> Localizacion</a></h1></div>
-            <div> <h1> <a href="./contacto.html">Contacto</a></h1></div>
-            <div> <h1> <a href="./faq.html">Faq</a></h1></div>
-        
-    </nav>
-</div>
-<hr>
-<main>
-<section>
-<article class="faq1">
-    <div class="btn-faq1">
-
+      <i class="iconoBoton"><img src="./media/img/logo_cerveza.jpg" alt="" width="55em" height="55em"></i>
       
-        <h1 class="h1-faq">¿Aceptan todos los medios de pago?</h1>
-   
-</div>  
-    <div  id="id-faq1" class="div-faq1 visible-faq1">
-        <p class="pfaq1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium voluptates illo quibusdam placeat delectus esse unde accusamus, nisi tempore atque quisquam quae quam repellat hic enim voluptatum quaerat sed?</p>
+  </div>
+  <div class="contenedor">
+    <header>
+      <div class="logo">
+                
+      </div>
+    </header>
+      <div class="container-lg">
+            <nav>
+              <div> <h1> <a href="../index.html"> Home</a></h1></div>
+              <div> <h1> <a href="./acercade.html">Acerca de </a></h1></div>
+              <div> <h1> <a href="./localizacion.html"> Localizacion</a></h1></div>
+              <div> <h1> <a href="./contacto.html">Contacto</a></h1></div>
+              <div> <h1> <a href="./faq.html">Faq</a></h1></div>
+            </nav>
+      </div>
     </div>
-</article>
-<br>
-<article class="faq2">
-
-    <div class="btn-faq2">
-        
-        
-        <h1 class="h1-faq">¿Aceptan todos los medios de pago?</h1>
-        
-    </div>  
-    <div class="div-faq2">
-        <p class="pfaq1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae praesentium voluptates illo quibusdam placeat delectus esse unde accusamus, nisi tempore atque quisquam quae quam repellat hic enim voluptatum quaerat sed?</p>
-    </div>
-</article>
-    <article class="faq3"></article>
-    <article class="faq4"></article>
-<article class="faq5"></article>
-<article class="faq6"></article>
-</section>
+    <main>
+      <div class="btn-faq1">
+      </div>  
 </main>
-<footer class="center">
+<footer id="footer" style="text-align: center;">
+<!-- Button trigger modal -->
 
-    <p>Síguenos en nuestras redes. </p>
-    <a class="redsoc"  href="https://www.twitter.com" target="_blank">
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-    </a>
-    <a class="redsoc" href="https://www.facebook.com" target="_blank">
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-    </a>
-    <a class="redsoc" href="https://www.pinterest" target="_blank">
-        <i class="fa fa-pinterest" aria-hidden="true"></i>
-    </a>
-    <a class="redsoc" href="https://www.instagram.com" target="_blank">
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-    </a>
-    <a class="redsoc" href="https://www.linkedin.com" target="_blank">
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-    </a>
+<!-- Modal -->
+<div
+class="modal fade"
+id="exampleModal"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+ </div>
+ <div class="container-lg">
+  <div id="carouselExample" class="carousel slide">
+    <br/><br/>      <br> 
+<p style="text-align: center;color: white; font-size:larger">Contactanos!
+</p>
+<br/>
+<p style="text-align: center;  font-size:smaller;color: white; ">Dejanos tu consulta y te responderemos cuanto antes
+</p>
+</div>
+<br/>    <br/>
+</div>
+<div class="center-div">
+  <form action="/" method="post">      
+    <div class="top-row">
+      <div class="field-wrap">
+        <p><span style="color: white; font-size: small;">Nombre*!</span><input type="text" id="name" name="name" required autocomplete="off" style="margin-left: 1em;" /></p>
+        </div> <br/>
+      <div class="field-wrap">      
+          <p><span style="color: white; font-size: small;">Apellido*!</span><input type="text" id="lastname" name="lastname" required autocomplete="off" style="margin-left: 1em;"/></p>
+      </div> <br/>
+      <div class="field-wrap">      
+        <p><span style="color: white; font-size: small;">Email*!</span><input type="email" id="email" name="email" required autocomplete="off"style="margin-left: 1em;" /></p>
+    </div> <br/>
+    <br/>
+    <div class="field-wrap">
+      
+      <label>
+        <span style="color: white;">Mensaje</span><span class="req">*</span>
+        <textarea name="msg" rows="10" cols="50" placeholder="Escriba su comentario aquí..." required></textarea>
+      </label>
+    </div>
+    <br/>
 
+    <button type="submit" class="button button-block"/>Enviar consulta</button>
+    
+  </form>
+    <br/> <br/> <br/> <br/>
+	
+
+</div>  				
+<p>Síguenos en nuestras redes. </p>
+<a class="redsoc"  href="https://www.twitter.com" target="_blank">
+    <i class="fa fa-twitter" aria-hidden="true"></i>
+</a>
+<a class="redsoc" href="https://www.facebook.com" target="_blank">
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+</a>
+<a class="redsoc" href="https://www.pinterest" target="_blank">
+    <i class="fa fa-pinterest" aria-hidden="true"></i>
+</a>
+<a class="redsoc" href="https://www.instagram.com" target="_blank">
+    <i class="fa fa-instagram" aria-hidden="true"></i>
+</a>
+<a class="redsoc" href="https://www.linkedin.com" target="_blank">
+    <i class="fa fa-linkedin" aria-hidden="true"></i>
+</a>
+<br/> <br/> <br/>
 <p>Derechos reservados @2023</p>
 
 
 </footer>
 <script src="./js/menu.js"></script>
+
 </body>
 </html>
