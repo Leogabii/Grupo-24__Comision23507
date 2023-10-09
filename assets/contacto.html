@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/contacto.css">
         <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+    <script src="./js/contacto.js"></script>
     <title>BEER PUB</title>
 <style>
     .field-wrap {
@@ -90,14 +91,14 @@ aria-hidden="true"
             <label>
               Nombre<span class="req">*</span>
             </label>
-            <input type="text" required autocomplete="off" />
+            <input type="text" required autocomplete="off" pattern="[a-zA-Z ]+" inputmode="text"  />
           </div>
       
           <div class="field-wrap">
             <label>
               Apellido<span class="req">*</span>
             </label>
-            <input type="text"required autocomplete="off"/>
+            <input type="text"required autocomplete="off" pattern="[a-zA-Z ]+" inputmode="text" />
           </div>
          <div class="field-wrap">
           <label>
@@ -109,7 +110,7 @@ aria-hidden="true"
           <label>
             Edad
           </label>
-          <input type="text" required autocomplete="off" />
+          <input type="number" required autocomplete="off" />
         </div>
           <div class="field-wrap">
           <label>
@@ -122,15 +123,16 @@ aria-hidden="true"
             Cerveza preferida
           </label>
           <select name="cerveza" class="field-wrap">
-            <option value="jaguar" selected>Jaguar</option>
-            <option value="kross">Kross</option>
-            <option value="lechuza">Lechuza</option>
-            <option value="malafacha">Malafacha</option>
-            <option value="pabloner">Pabloner</option>
-            <option value="santa fe">Santa Fe</option>
-            <option value="stone">Stone</option>
-            <option value="trillium">Trillium</option>
-            <option value="wicked weed">Wicked Weed</option>
+            <option value="ipa">IPA</option>
+            <option value="stout">Stout</option>
+            <option value="porter">Porter</option>
+            <option value="pale_ale">Pale Ale</option>
+            <option value="amber_ale">Amber Ale</option>
+            <option value="witbier">Witbier</option>
+            <option value="weizenbier">Weizenbier</option>
+            <option value="scottish_ale">Scottish Ale</option>
+            <option value="saison">Saison</option>
+            <option value="lager">Lager</option>
           </select>
         </div>
         </div>
