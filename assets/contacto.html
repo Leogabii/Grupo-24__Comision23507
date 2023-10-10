@@ -2,30 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./css/contacto.css">
-        <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
-    <script src="./js/contacto.js"></script>
-    <title>BEER PUB</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/contacto.css">
+      <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+  <script src="./js/contacto.js"></script>
+  <title>BEER PUB</title>
 <style>
-    .field-wrap {
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .field-wrap > label {
-      display: block;
-    }
-    
-    .field-wrap > input[type="radio"] {
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 5px;
-    }
-  </style>
+  .field-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .field-wrap > label {
+    display: block;
+  }
+  
+  .field-wrap > input[type="radio"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+</style>
 </head>
   <body>
     <div class="menu-btn">
@@ -90,14 +90,15 @@ aria-hidden="true"
             <label>
               Nombre<span class="req">*</span>
             </label>
-            <input type="text" required autocomplete="off" pattern="[a-zA-Z ]+" inputmode="text"  />
+            <input type="text" required autocomplete="off" id="nombre" name="nombre" pattern="[a-zA-Z]+" />
+
           </div>
       
           <div class="field-wrap">
             <label>
               Apellido<span class="req">*</span>
             </label>
-            <input type="text"required autocomplete="off" pattern="[a-zA-Z ]+" inputmode="text" />
+            <input type="text"required autocomplete="off" pattern="[a-zA-Z]+" />
           </div>
          <div class="field-wrap">
           <label>
