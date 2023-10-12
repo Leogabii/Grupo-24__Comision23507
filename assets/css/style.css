@@ -119,8 +119,8 @@ header{
 
 .logo{
 	background-image: url(../media/img/logo_cerveza.jpg);
-	width: 8em;
-	height: 8em;
+	width: 5em;
+	height: 5em;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -128,14 +128,30 @@ header{
 	padding: 0;
 	margin: 0;
 	z-index: 1;
-	border: 1px solid; 
-     box-shadow: rgb(150,150,150) 5px 5px 20px; 
+	transition: .5s;
+	/* border: 1px solid; 
+     box-shadow: rgb(150,150,150) 5px 5px 20px;  */
+}
+
+.logo:hover{
+	background-image: url(../media/img/logo_cerveza.jpg);
+	width: 5.5em;
+	height: 5.5em;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: hard-light;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+	cursor:pointer;
+	/* border: 1px solid;  */    
+	/* box-shadow: rgb(150,150,150) 5px 5px 20px;  */
 }
 
 nav {
 	
 	height: calc(1/3*100%);
-	
 	box-sizing: border-box;
 	display: flex;
 	gap: 5 rem;
@@ -149,9 +165,9 @@ nav {
 
 nav>div {
 	border-left: 2px solid var(--fg);
-
+	
 	border-bottom-left-radius: 2em;
-	height: 2.5em;
+	height: 2em;
 	max-width: calc(1/6*100%);
 	width: 7em;
 	/* justify-content: center; */
@@ -193,10 +209,13 @@ color:var(--bg);
 
 }
 
-
+main{
+	padding-top: 2em;
+}
 
 /*hace la linea de separacion menu main */
 hr{
+	
 	border: .1em solid var(--bs-gray-300);
 	border-radius: 5%;
 	margin: 0 2em;
@@ -292,7 +311,8 @@ p.tituloP{
 }
 
 .titulos h1{
-    color: var(--bs-gray-400);
+    padding-top: .5em;
+	color: var(--bs-gray-400);
     margin-bottom: 1em;
     font-family: var(--bs-font-sans-serif);
 }
