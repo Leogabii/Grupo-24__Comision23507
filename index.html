@@ -109,9 +109,24 @@
             </div>
         </aside>
 
+        <div id="modal-container">
+        <div class="div-modal" id="div-modal">
+                     
+            <section class="modal hidden">
+              <div class="flex">
+                <img src="./assets/media/img/logo_cerveza.jpg" width="50px" height="50px" alt="user" />            
+              </div>
+              <div><br/>
+                <h3>¿SOS MAYOR DE 18 AÑOS?</h3><br/>
+              </div>
+              <div class="button-container">
+                <button class="btn-modal" id="btn-mayor">Soy mayor</button>
+                <button Class="btn-modal" id="btn-menor" onclick="window.location.href = 'https://www.youtube.com/playlist?list=PLj9a64Hsq1qrFZYaNh1waoaFvTJrTn0LP'">Redirigir</button>
 
-
-
+              </div>
+            </section>
+         </div>
+        </div>
     </main>
     <footer class="center">
 
@@ -176,8 +191,24 @@
 });
     </script>
     
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const mayor = document.getElementById("btn-mayor");
+    const menor = document.getElementById("btn-menor");
+    const divModal = document.getElementById("div-modal");
+    const modalContainer = document.getElementById("modal-container");
+
+    mayor.addEventListener("click", function () {
+        divModal.style.display = "none";
+        modalContainer.style.display = "none";
+    });
 
 
+
+
+});
+
+      </script>
 </body>
 
 </html>
