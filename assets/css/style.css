@@ -119,8 +119,8 @@ header{
 
 .logo{
 	background-image: url(../media/img/logo_cerveza.jpg);
-	width: 8em;
-	height: 8em;
+	width: 5em;
+	height: 5em;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -128,14 +128,30 @@ header{
 	padding: 0;
 	margin: 0;
 	z-index: 1;
-	border: 1px solid; 
-     box-shadow: rgb(150,150,150) 5px 5px 20px; 
+	transition: .5s;
+	/* border: 1px solid; 
+     box-shadow: rgb(150,150,150) 5px 5px 20px;  */
+}
+
+.logo:hover{
+	background-image: url(../media/img/logo_cerveza.jpg);
+	width: 5.5em;
+	height: 5.5em;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: hard-light;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+	cursor:pointer;
+	/* border: 1px solid;  */    
+	/* box-shadow: rgb(150,150,150) 5px 5px 20px;  */
 }
 
 nav {
 	
 	height: calc(1/3*100%);
-	
 	box-sizing: border-box;
 	display: flex;
 	gap: 5 rem;
@@ -149,9 +165,9 @@ nav {
 
 nav>div {
 	border-left: 2px solid var(--fg);
-
+	
 	border-bottom-left-radius: 2em;
-	height: 2.5em;
+	height: 2em;
 	max-width: calc(1/6*100%);
 	width: 7em;
 	/* justify-content: center; */
@@ -193,10 +209,13 @@ color:var(--bg);
 
 }
 
-
+main{
+	padding-top: 2em;
+}
 
 /*hace la linea de separacion menu main */
 hr{
+	
 	border: .1em solid var(--bs-gray-300);
 	border-radius: 5%;
 	margin: 0 2em;
@@ -292,7 +311,8 @@ p.tituloP{
 }
 
 .titulos h1{
-    color: var(--bs-gray-400);
+    padding-top: .5em;
+	color: var(--bs-gray-400);
     margin-bottom: 1em;
     font-family: var(--bs-font-sans-serif);
 }
@@ -415,9 +435,9 @@ a{
 
 
 .main-acercade{
-		padding: 10px;
+		padding: 30px;
 		width: 100%;
-		margin: auto;
+		margin: 30px;
 	}
 
 
@@ -430,49 +450,70 @@ a{
 	}
 	
 	.banner{
-		margin: 0;
+		margin: auto;
 		padding: 0;
 		width: 100%;
 	}
 
 	.tamaño-banner
 	{
-		width: 100%;
-		height: 15rem;
+		width: auto;
+		height: 1rem;
 		
 	}
 
+	.section-acercade{
+	
+	    text-align: center;
+		width: 90%;
+		max-width: 1em;
+		padding: auto;
+		display: flexbox;
+		gap: 10 px;
 
-
-
-	.div-acercade{
-		width: 100%;
 	}
 	
-	
+    /* .p-description {
+
+		font-family: Arial, Helvetica, sans-serif;
+		background-color: #0f314e;
+		font-size: 1em;
+		font-style: oblique; */
+
+	/* } */
+
 	.ul-acercade{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+	text-align: center;
+	display: grid; 
+	grid-template-columns: 3 px 7 px  2px 4px;
+	gap: 12px;
+	padding: 10%;  
+	min-height: 2vh; 
+	display: flex;
+	flex-direction: row;
+	gap: 12px; 
+	justify-content:space-between ;
+
 	
-		list-style: none;
+	list-style: none; 
 			
 	}
 	
 	.li-acercade{
 		justify-self: center;
-		border: 2px solid var(--bs-gray-500);
-		justify-content: center;
-		align-content: center;
-		align-self: center;
+		border: 5px solid #adb5bd;
+		justify-content: space-evenly;
+		align-content: auto;
+		align-self: auto;
 		padding-left: 1rem;
-		padding-top: 5px;
+		padding-top: 2px;
 	}
 	
 
 	.tamaño_acercade
 	{
-		width: 90%;
-		height: 18rem;
+		width: 10%;
+		height: 12rem;
 		
 	}
 
