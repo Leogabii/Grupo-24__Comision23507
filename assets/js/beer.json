@@ -1,0 +1,203 @@
+[
+    {
+        "price": "$1",
+        "name": "Founders CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/jon-parry-C8eSYwQkwHw-unsplash.jpg",
+        "id": 1
+    },
+    {
+        "price": "$2",
+        "name": "yevaCBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+
+        "image": "./media/img/WhatsApp.png",
+        "id": 2
+    },
+    {
+        "price": "$3",
+        "name": "sout CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/yasin-aribuga-daMT4OR3Eac-unsplash.jpg",
+        "id": 3
+    },
+    {
+        "price": "$4",
+        "name": "Founders CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/WhatsApp.png",
+        "id": 4
+    },
+    {
+        "price": "$5",
+        "name": "yevaCBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/yasin-aribuga-daMT4OR3Eac-unsplash.jpg",
+        "id": 5
+    },
+    {
+        "price": "$6",
+        "name": "sout CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/louis-hansel-vm4g1MBZUv4-unsplash.jpg",
+        "id": 6
+    }, 
+    {
+        "price": "$1",
+        "name": "Founders CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/WhatsApp.png",
+        "id": 7
+    },
+    {
+        "price": "$2",
+        "name": "yevaCBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/jon-parry-C8eSYwQkwHw-unsplash.jpg",
+        "id": 8
+    },
+    {
+        "price": "$3",
+        "name": "sout CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/louis-hansel-vm4g1MBZUv4-unsplash.jpg",
+        "id": 9
+    },
+    {
+        "price": "$1",
+        "name": "Founders CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/WhatsApp.png",
+        "id": 10
+    },
+    {
+        "price": "$2",
+        "name": "yevaCBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/totoro.jpg",
+        "id": 11
+    },
+    {
+        "price": "$3",
+        "name": "sout CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/jurassic-park.jpg",
+        "id": 12
+    },
+    {
+        "price": "$4",
+        "name": "Founders CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/jon-parry-C8eSYwQkwHw-unsplash.jpg",
+        "id": 13
+    },
+    {
+        "price": "$6",
+        "name": "sout CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/jurassic-park.jpg",
+        "id": 14
+    }, 
+    {
+        "price": "$1",
+        "name": "Founders CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/WhatsApp.png",
+        "id": 15
+    },
+    {
+        "price": "$2",
+        "name": "yevaCBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/louis-hansel-vm4g1MBZUv4-unsplash.jpg",
+        "id": 16
+    },
+    {
+        "price": "$3",
+        "name": "sout CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/WhatsApp.png",
+        "id": 17
+    },
+    {
+        "price": "$1",
+        "name": "Founders CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/WhatsApp.png",
+        "id": 18
+    },
+    {
+        "price": "$2",
+        "name": "yevaCBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/louis-hansel-vm4g1MBZUv4-unsplash.jpg",
+        "id": 19
+    },
+    {
+        "price": "$3",
+        "name": "sout CBS",
+        "rating": {
+            "average": 1.3498085290196702,
+            "reviews": 105
+        },
+        "image": "./media/img/WhatsApp.png",
+        "id": 20
+    }
+]

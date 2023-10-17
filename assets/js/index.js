@@ -1,49 +1,20 @@
-document.addEventListener("DOMContentLoaded", function () {
-    var formulario = document.forms["formulario"];
-    formulario.addEventListener('submit', validarFormulario);
-});
 
-function validarFormulario(evento) {
-    evento.preventDefault();
-    var nombre = document.getElementById('nombre').value;
-    var email = document.getElementById('email').value;
-    var mensaje = document.getElementById('mensaje').value;
-    var checkbox = document.getElementById('check').checked;
+// USO DE MI FW
 
-    if (nombre.length === 0 || email.length === 0 || mensaje.length === 0 || !checkbox) {
-        alert('Por favor, completa todos los campos y acepta los términos.');
-        return;
-    }
-
-    formulario.submit();
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-// Obtenemos todos los inputs del formulario
-var inputs = document.querySelectorAll('input');
-
-// Agregamos un evento de cambio a cada input
-for (var i = 0; i < inputs.length; i++) {
-inputs[i].addEventListener('input', function() {
-// Cambiamos el color de la fuente
-this.style.color = '#000';
-});
-}
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-const mayor = document.getElementById("btn-mayor");
-const menor = document.getElementById("btn-menor");
-const divModal = document.getElementById("div-modal");
-const modalContainer = document.getElementById("modal-container");
-
-mayor.addEventListener("click", function () {
-divModal.style.display = "none";
-modalContainer.style.display = "none";
-});
+import { Render } from "./Render.js";
+import { veronicaSuperPower } from "./VeronicaSuperPower.js";
+import { convertir } from "./convertir.js";
 
 
 
 
-});
 
+
+const app = new Render("app");
+
+
+const JSON_LOCAL = "./js/beer.json";
+const JSON_LOCALS = "./js/beers.json";
+const API_URI = "https://api.sampleapis.com/beers/stouts";
+
+app.fetchData(API_URI, veronicaSuperPower,convertir);

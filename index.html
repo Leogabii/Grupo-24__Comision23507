@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
     <title>BEER PUB</title>
+    <link rel="stylesheet" href="./assets/css/registro.css">
+    
+    
 
 </head>
 
@@ -46,6 +50,7 @@
             <div class="slider">
                 <ul>
 
+
                     <li> <img src="./assets/media/img/florencia-viadana-mI61X5I-jKQ-unsplash.jpg" alt="" class="tamaño"></li>
                     <li> <img src="./assets/media/img/patrick-tomasso-GXXYkSwndP4-unsplash.jpg" alt="" class="tamaño"></li>
                     <li> <img src="./assets/media/img/jon-parry-C8eSYwQkwHw-unsplash.jpg" alt="" class="tamaño"></li>
@@ -62,70 +67,89 @@
 
         </section>
         <aside>
-            <div class="slider">
-                <div class="formulario">
-                    <form name="formulario"
-                    action="https://formspree.io/f/xvojadgo"
-                    method="POST">
-                    
-                        <h2 class="titulo margen">
-                            ¡Contáctanos!
-                        </h2>
-                        <p class="tituloP margen2">
-                            Déjanos tu consulta y te responderemos cuanto antes.
-                        </p>
-            <div class="mensaje" >
+            <div class="slider scroll">
 
-                
-                <fieldset>
-                    <legend class="titulo">Datos Personales</legend>
-                    <div>
-                        
-                        <input type="text" id="nombre" name="nombre"  placeholder="Nombre" class="input" required pattern="^[a-zA-Z]+$">
-                    </div> 
-                   <div class="br"></div>
-                   
-                    <div>
-                        <input type="email" id="email" name="email" placeholder="Email" class="input" required>
+                <section class="form-wrapper">
+                    <h2>Registrate</h2>
+                    <h4> 👉 Habra novedades para vos....!! 👈 </h4>
+                 
+                    
+                    <form  id="formRegister" name="contact" action="https://formspree.io/f/xvojadgo" method="POST"  >
+                        <div class="form-control show">
+                            <label for="firstname">Nombre</label>
+                            <input type="text" name="firstname" id="firstname" >
+                        </div>
+                        <div class="error" id="error-firstname"></div>
+                    <div class="form-control">
+                        <label for="lastname">Apellido</label>
+                        <input type="text" name="lastname" id="lastname">
                     </div>
-                </fieldset>
-                <div class="br"></div>
-                <textarea name="mensaje" id="mensaje" cols="36" rows="10" placeholder="Mensaje"></textarea>
-                
-                <div class="br"></div>
-                <div class="contengo_check">
-                    
-                    <input  type="checkbox" name="check" id="check"><span class="acepto">Acepto que mis datos serán utilizados con el objeto de brindarme servicios, productos y asistencia, conformes a la política de privacidad. <span><a class="standard" href="#"><b>Política de privacidad</b></a></span></span>
-                    
-                </div>
-                <p>
-                    <input class="rojo" type="submit" value="Enviar Consulta">
-                </p>
-            </div>
-            </form>
-        </div>
-
-            </div>
-        </aside>
-
-        <div id="modal-container">
-        <div class="div-modal" id="div-modal">
-                     
-            <section class="modal hidden">
-              <div class="flex">
-                <img src="./assets/media/img/logo_cerveza.jpg" width="50px" height="50px" alt="user" />            
-              </div>
-              <div><br/>
-                <h3>¿SOS MAYOR DE 18 AÑOS?</h3><br/>
-              </div>
-              <div class="button-container">
-                <button class="btn-modal" id="btn-mayor">Soy mayor</button>
-                <button Class="btn-modal" id="btn-menor" onclick="window.location.href = 'https://www.youtube.com/playlist?list=PLj9a64Hsq1qrFZYaNh1waoaFvTJrTn0LP'">Soy menor</button>
-
-              </div>
+                    <div class="error" id="error-lastname"></div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="form-control">
+                        <label id="label-birthdate" for="birthdate">Fecha de Nacimiento</label>
+                        <input type="date" name="birthdate" id="birthdate">
+                    </div>
+                    <div class="form-control">
+                        <select name="country" id="country" class="form-select">
+                            <option value="">País</option>
+                            <option value="AR">Argentina</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BR">Brasil</option>
+                            <option value="CH">Chile</option>
+                            <option value="CO">Colombia</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Perú</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="VE">Venezuela</option>
+                        </select>
+                    </div>
+                    <div class="form-terms">
+                        <div class="terms">
+                            <input type="checkbox" id="terms">
+                            <label for="terms">Acepto términos y condiciones</label>
+                        </div>
+                    </div>
+                    <button type="submit">Registrarse</button>
+                    <div class="form-help"> 
+                        <a href="#">Necesitas ayuda?</a>
+                    </div>
+                </form>
             </section>
-         </div>
+
+            
         </div>
+            
+        </aside>
+        <div id="modal-container">
+            <div class="div-modal" id="div-modal">
+                         
+                <section class="modal hidden">
+                  <div class="flex">
+                    <img src="./assets/media/img/logo_cerveza.jpg" width="50px" height="50px" alt="user" />            
+                  </div>
+                  <div><br/>
+                    <h3>¿SOS MAYOR DE 18 AÑOS?</h3><br/>
+                  </div>
+                  <div class="button-container">
+                    <button class="btn-modal" id="btn-mayor">Soy mayor</button>
+                    <button Class="btn-modal" id="btn-menor" onclick="window.location.href = 'https://www.youtube.com/playlist?list=PLj9a64Hsq1qrFZYaNh1waoaFvTJrTn0LP'">Soy menor</button>
+    
+                  </div>
+                </section>
+             </div>
+            </div>
+        
+        
+
     </main>
     <footer class="center">
 
@@ -150,13 +174,56 @@
     
 
     </footer>
-   
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/validation-register.js"></script>
+    <script src="./assets/js/contacto.modal.js"></script>
+</body>
+</html>
 
+
+
+
+<!-- <div class="slider">
+    <div class="formulario">
+        <form name="formulario"
+        action="https://formspree.io/f/xvojadgo"
+        method="POST">
+        
+            <h2 class="titulo margen">
+                ¡Contáctanos!
+            </h2>
+            <p class="tituloP margen2">
+                Déjanos tu consulta y te responderemos cuanto antes.
+            </p>
+<div class="mensaje" >
 
     
+    <fieldset>
+        <legend class="titulo">Datos Personales</legend>
+        <div>
+            
+            <input type="text" id="nombre" name="nombre"  placeholder="Nombre" class="input" required >
+        </div> 
+       <div class="br"></div>
+       
+        <div>
+            <input type="email" id="email" name="email" placeholder="Email" class="input" required>
+        </div>
+    </fieldset>
+    <div class="br"></div>
+    <textarea name="mensaje" id="mensaje" cols="36" rows="10" placeholder="Mensaje"></textarea>
+    
+    <div class="br"></div>
+    <div class="contengo_check">
+        
+        <input  type="checkbox" name="check" id="check"><span class="acepto">Acepto que mis datos serán utilizados con el objeto de brindarme servicios, productos y asistencia, conformes a la política de privacidad. <span><a class="standard" href="#"><b>Política de privacidad</b></a></span></span>
+        
+    </div>
+    <p>
+        <input class="rojo" type="submit" value="Enviar Consulta">
+    </p>
+</div>
+</form>
+</div>
 
-
-      <script src="./assets/js/index.js"></script>
-</body>
-
-</html>
+</div> -->

@@ -1,26 +1,31 @@
 document.querySelector('.menu-btn').addEventListener('click',() => { document.querySelector('nav').classList.toggle('show');});
 
-// document.querySelector('.btn-faq1').addEventListener('click',() => { document.querySelector('div-faq1').classList.toggle('visible-faq1');});
-/*
-visible-faq1
-*/
 
 
 
-function ocultar(){
-    if(document.getElementById('id-faq1').style.visibility==='hidden'){
 
-        document.getElementById('id-faq1').style.visibility='visible' 
+// cree una funcion generica
+
+function ocultar2(vlor){
+    if(document.getElementById(vlor).style.visibility==='hidden'){
+
+        document.getElementById(vlor).style.visibility='visible' 
     }else{
 
-        document.getElementById('id-faq1').style.visibility='hidden'    ;
+        document.getElementById(vlor).style.visibility='hidden'    ;
     }
 }
 
-function muestra(){
-    document.getElementById('id-faq1').style.visibility='visible';
-}
 
-document.querySelector('.btn-faq1').addEventListener('click',() => {ocultar()});
 
-// document.querySelector('.btn-faq1').addEventListener('click',() => {document.querySelector('div-faq1').classList.toggle('muestra()');});
+
+
+
+document.querySelector('.btn-faq1').addEventListener('click',() => {ocultar2('id-faq1')});
+
+document.querySelector('.btn-faq2').addEventListener('click',() => {ocultar2('id-faq2')});
+
+document.querySelector('.btn-faq3').addEventListener('click',() => {ocultar2('id-faq3')});
+
+
+

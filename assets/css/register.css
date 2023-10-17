@@ -1,0 +1,10 @@
+.form-wrapper {
+    /* position: absolute; */
+    left: 50%;
+    top: 50%;
+    border-radius: 4px;
+    padding: 20px 70px;
+    width: 450px;
+    transform: translate(-50%, -50%);
+    background:rgba(42,42,42 ,1);
+}

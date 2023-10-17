@@ -1,0 +1,195 @@
+.form-wrapper {
+    /* position: absolute; */
+  
+    border-radius: 2px;
+    padding: .5rem;
+    width: 100%;
+    transform: translate(1%, 1%);
+    background:#212529;
+  
+}
+
+.form-wrapper h2 {
+    color: #fff;
+    /* font-size: 1rem; */
+}
+
+.form-wrapper form {
+    margin: auto;
+}
+
+form .form-control {
+    height: 100%;
+    position: relative;
+    margin-top: 1px;
+}
+.form-control input {
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    outline: none;
+    border-radius: 25px;
+    color: #fff;
+    /* font-size: 1rem; */
+    padding: 0 0px;
+}
+
+
+.form-control input:is(:focus, :valid) {
+    background: #444;
+    padding: .5rem 5rem 0;
+}
+
+.form-control label {
+    /* position: absolute; */
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    color: #8c8c8c;
+    transition: all 0.1s ease;
+}
+
+#birthdate{
+    padding: .5rem 5rem 0;
+}
+
+#label-birthdate{
+    transform: translateY(-130%);
+    font-size: 0.75rem;
+}
+
+.form-control input:is(:focus, :valid)~label {
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    padding: .5rem .2rem;
+    font-size: .75rem;
+    /* font-weight: 400; */
+    line-height: 1.5;
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    border-radius: 25px;
+
+}
+
+.form-select option{
+    color:#2a2a2a;
+}
+
+form button {
+    width: 60%;
+    padding: .5rem 0;
+    /* font-size: 1rem; */
+    background-color: #b1dd00;
+    color:#143954;
+    /* font-weight: 500; */
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: .1rem 0 .1rem;
+    cursor: pointer;
+    transition: 0.1s ease;
+   
+}
+
+form button:hover{
+    background-color: #94b900;
+}
+
+.form-wrapper a {
+    text-decoration: none;
+}
+
+.form-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.form-wrapper :where(label, p, small, a) {
+    color: #b3b3b3;
+}
+
+form .form-terms {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+}
+
+form .terms {
+    display: flex;
+}
+
+form .terms input {
+    margin-right: 5px;
+    accent-color: #b3b3b3;
+}
+
+/* form .form-terms :where(label, a) {
+    font-size: 0.9rem;
+} */
+
+.form-wrapper p a {
+    color: #fff;
+}
+
+.form-wrapper small {
+    display: block;
+    margin-top: .75rem;
+    color: #b3b3b3;
+}
+
+.form-wrapper small a {
+    color: #0071eb;
+}
+
+.error{
+    color: red;
+    margin-bottom: 5px;
+}
+.form-control input.error, .form-select.error{
+    border: 2px solid red; 
+}
+
+@media (max-width: 740px) {
+    body::before {
+        display: none;
+    }
+
+    nav {
+        font-size: 1em;
+        justify-content: center;
+    }
+    nav, .form-wrapper {
+        padding: .5rem;
+    }
+
+    .form-wrapper {
+        padding: .5rem .5rem;
+        margin-top: 1rem;
+    }
+    
+    .form-wrapper form {
+        margin: .5rem 0 1rem;
+    }
+
+    /* nav a img {
+        width: 140px;
+    } */
+
+    .form-wrapper {
+        width: 100%;
+        top: 50%;
+    }
+
+    .form-wrapper form {
+        margin: .5rem 0 1rem;
+    }
+}
